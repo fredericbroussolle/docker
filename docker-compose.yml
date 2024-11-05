@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  broker_mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    networks:
+      - meteo_network
+
+  server_nodered:
+    image: nodered/node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./nodered/data:/data
+    networks:
+      - meteo_network
+  
+  debian_ssh:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Assurez-vous que le Dockerfile se trouve dans le même dossier
+    container_name: debian_ssh_mosquitto
+    ports:
+      - "22:22"   # Mappe le port SSH du container vers le port 2222 de l'hôte
+    volumes:
+      - ./debian:/root
+    networks:
+      - meteo_network
+
+networks:
+  meteo_network:
+    driver: bridge

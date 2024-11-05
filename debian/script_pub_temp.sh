@@ -1,0 +1,1 @@
+mosquitto_pub -h broker_mosquitto -t 'e06/temperature' -m 25
