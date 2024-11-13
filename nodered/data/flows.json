@@ -176,78 +176,6 @@
         "className": ""
     },
     {
-        "id": "2548e20f689c2f6f",
-        "type": "ui_gauge",
-        "z": "5862a788781a4111",
-        "name": "",
-        "group": "9abb73979d683520",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "gauge",
-        "label": "units",
-        "format": "{{value}}",
-        "min": 0,
-        "max": 10,
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 530,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "7a648a674c0ddf7b",
-        "type": "ui_chart",
-        "z": "5862a788781a4111",
-        "name": "",
-        "group": "9abb73979d683520",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "label": "chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 530,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7e2331e4e6b6114c",
         "type": "ui_slider",
         "z": "5862a788781a4111",
@@ -271,28 +199,6 @@
         "wires": [
             [
                 "45a6664b5ee04dc3"
-            ]
-        ]
-    },
-    {
-        "id": "579e2f8f3607615b",
-        "type": "mqtt in",
-        "z": "5862a788781a4111",
-        "name": "",
-        "topic": "e06/humidite",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "cb869da4ab3acfd2",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 270,
-        "y": 200,
-        "wires": [
-            [
-                "2548e20f689c2f6f",
-                "7a648a674c0ddf7b"
             ]
         ]
     },

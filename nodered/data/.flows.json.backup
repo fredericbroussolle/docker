@@ -39,11 +39,247 @@
         "sessionExpiry": ""
     },
     {
-        "id": "1f0a60df71915dd2",
+        "id": "95d2f1320132ef99",
+        "type": "ui_tab",
+        "name": "E06",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a03635e1f01f6646",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1364a57dc68f7763",
+        "type": "ui_group",
+        "name": "Température",
+        "tab": "95d2f1320132ef99",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9abb73979d683520",
+        "type": "ui_group",
+        "name": "Humidité",
+        "tab": "95d2f1320132ef99",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "36885b04093786c9",
+        "type": "ui_group",
+        "name": "Climatisseur",
+        "tab": "95d2f1320132ef99",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2548e20f689c2f6f",
+        "type": "ui_gauge",
+        "z": "5862a788781a4111",
+        "name": "",
+        "group": "9abb73979d683520",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 530,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "7a648a674c0ddf7b",
+        "type": "ui_chart",
+        "z": "5862a788781a4111",
+        "name": "",
+        "group": "9abb73979d683520",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e2331e4e6b6114c",
+        "type": "ui_slider",
+        "z": "5862a788781a4111",
+        "name": "",
+        "label": "Climatisseur",
+        "tooltip": "",
+        "group": "36885b04093786c9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "10",
+        "max": "25",
+        "step": 1,
+        "className": "",
+        "x": 270,
+        "y": 320,
+        "wires": [
+            [
+                "45a6664b5ee04dc3"
+            ]
+        ]
+    },
+    {
+        "id": "579e2f8f3607615b",
         "type": "mqtt in",
         "z": "5862a788781a4111",
         "name": "",
-        "topic": "#",
+        "topic": "e06/humidite",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "cb869da4ab3acfd2",
@@ -51,28 +287,125 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 250,
-        "y": 120,
+        "x": 270,
+        "y": 200,
         "wires": [
             [
-                "33af2d0047f69040"
+                "2548e20f689c2f6f",
+                "7a648a674c0ddf7b"
             ]
         ]
     },
     {
-        "id": "33af2d0047f69040",
-        "type": "debug",
+        "id": "45a6664b5ee04dc3",
+        "type": "mqtt out",
         "z": "5862a788781a4111",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 120,
+        "name": "",
+        "topic": "e06/clim",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cb869da4ab3acfd2",
+        "x": 540,
+        "y": 320,
         "wires": []
+    },
+    {
+        "id": "5fa9063d1f2bb377",
+        "type": "mqtt in",
+        "z": "5862a788781a4111",
+        "name": "",
+        "topic": "e06/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "cb869da4ab3acfd2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 60,
+        "wires": [
+            [
+                "26d0c405d1508d51",
+                "17cb29b5ea8c2654"
+            ]
+        ]
+    },
+    {
+        "id": "26d0c405d1508d51",
+        "type": "ui_gauge",
+        "z": "5862a788781a4111",
+        "name": "",
+        "group": "1364a57dc68f7763",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Température",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "15",
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 550,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "17cb29b5ea8c2654",
+        "type": "ui_chart",
+        "z": "5862a788781a4111",
+        "name": "",
+        "group": "1364a57dc68f7763",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Température",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "10",
+        "ymax": "30",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 100,
+        "wires": [
+            []
+        ]
     }
 ]
